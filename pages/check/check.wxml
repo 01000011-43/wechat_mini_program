@@ -1,0 +1,9 @@
+<!--pages/check/check.wxml-->
+
+
+<view class="box">
+<image class="pic" src="/images/delivery_logo.png"></image>
+<button class="msg">我的消息</button>
+</view>
+
+<view class="note">实名认证后可查看</view>

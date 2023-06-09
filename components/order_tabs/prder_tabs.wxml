@@ -1,0 +1,19 @@
+<view>
+  <view class="tabs">
+    <view wx:for="{{tabList}}" wx:key="id" class="total_title"
+    bindtap="handleItemTab" data-index="{{index}}">
+      <view class="title_item" wx:if="{{item.isActive}}">
+        <image src="{{item.select_src}}" mode="widthFix"></image>
+        <view class="txt_item_active">{{item.name}}</view>
+      </view>
+      <view class="title_item" wx:if="{{!item.isActive}}">
+        <image src="{{item.unselect_src}}" mode="widthFix"></image>
+        <view class="txt_item">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="tabs_content">
+  <!-- 传递插槽 -->
+    <slot></slot>
+  </view>
+</view>

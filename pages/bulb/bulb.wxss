@@ -1,0 +1,135 @@
+/* pages/bulb/bulb.wxss */
+
+page{
+  background:rgba(234, 245, 248, 0.979);
+  overflow:hidden;
+}
+
+.back{
+  width:65rpx;
+  height:65rpx;
+  float:left;
+  position:relative;
+  top:50rpx;
+}
+
+.top{
+  width:750rpx;
+  height:150rpx;
+  background-color:#fff;
+  overflow:hidden;
+}
+
+.search{
+  width:650rpx;
+  height:60rpx;
+  background-color:rgb(238, 236, 236);
+  position:relative;
+  top:50rpx;
+  left:50rpx;
+  border-radius:30rpx;
+  display:flex;
+  flex-direction:row;
+}
+
+.search_icon{
+  width:50rpx;
+  height:50rpx;
+  margin-top:10rpx;
+  margin-left:20rpx;
+}
+
+.search_img{
+  width:40rpx;
+  height:40rpx;
+}
+
+.search_txt{
+  color:rgb(138, 136, 136);
+  margin-left:20rpx;
+  margin-top:10rpx;
+  font-size:
+  small;
+}
+
+/*中间的导航*/
+.button_area{
+  width:600rpx;
+  height:510rpx;
+  position:relative;
+  left:75rpx;
+  background-color:#fff;
+  border-radius:20rpx;
+  top:200rpx;
+}
+
+.button_item{
+  margin:20rpx;
+  height:150rpx;
+  position:relative;
+  top:8rpx;
+  border-bottom: 1rpx solid rgb(243, 243, 243);
+}
+
+.button_imgarea1{
+  background-color:rgb(250, 229, 229);
+  height:100rpx;
+  width:100rpx;
+  position:relative;
+  top:20rpx;
+  border-radius:40rpx;
+}
+
+.button_imgarea2{
+  background-color:rgb(213, 235, 253);
+  height:100rpx;
+  width:100rpx;
+  position:relative;
+  top:20rpx;
+  border-radius:40rpx;
+}
+
+.button_imgarea3{
+  background-color:rgb(216, 253, 224);
+  height:100rpx;
+  width:100rpx;
+  position:relative;
+  top:20rpx;
+  border-radius:40rpx;
+}
+
+.button_imgarea4{
+  background-color:rgb(252, 251, 203);
+  height:100rpx;
+  width:100rpx;
+  position:relative;
+  top:20rpx;
+  border-radius:40rpx;
+}
+
+.button_img{
+  height:70rpx;
+  width:70rpx;
+  position:relative;
+  top:10rpx;
+  left:15rpx;
+}
+
+.button_txtarea{
+  background-color:#fff;
+  height:100rpx;
+  width:300rpx;
+  position:relative;
+  bottom:80rpx;
+  left:150rpx;
+}
+
+.button_txt1{
+  margin-top:15rpx;
+  font-weight:bold;
+}
+
+.button_txt2{
+  font-size:small;
+  color:rgb(165, 165, 165);
+}

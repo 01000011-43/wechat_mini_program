@@ -1,0 +1,47 @@
+<!--pages/group/group.wxml-->
+
+<view class="page" style="filter:{{blurvalue}}">
+<view class="top">
+  <view class="search">
+    <view class="search_icon">
+      <image class="search_img" src="/images/search.png"></image>
+    </view>
+    <view class="search_txt">输入查找内容</view>
+  </view>
+</view>
+
+<view class="image">
+  <image src="http://www.ccydqs.com/wx_images/group.jpg" class="image"></image>
+</view>
+
+<block wx:for="{{list}}" wx:key="list">
+  <view class="memo">
+    <view class="memo_title">#{{item.id}}</view>
+    <view class="memo_txt">{{item.content}}</view>
+  </view>
+</block>
+</view>
+
+<!--弹窗-->
+<view class="model" catchtouchmove='preventTouchMove' wx:if='{{showModal}}'></view>
+<view class="modalDlg" catchtouchmove='preventTouchMove' wx:if='{{showModal}}'>
+ <view class='windowRow'>
+  <text class='userTitle'>组队/拼车/合租内容：
+ </text>
+  <view class='eject_back' bindtap='back'>
+   返回
+  </view>
+ </view>
+ <view class='wishName'>
+  <textarea bindinput='wish_put' placeholder='请输入内容' class='wish_put'></textarea>
+ </view>
+ <view class='wishbnt'>
+  <button class='wishbnt_bt' bindtap='ok'>确定</button>
+ </view>
+</view>
+
+<view class='addNew' bindtap='eject'><view>+</view></view>
+
+
+
+

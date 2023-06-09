@@ -1,0 +1,296 @@
+/* pages/errand/errand.wxss */
+
+
+page{
+  background:rgb(210, 231, 236);
+  width:750rpx;
+  overflow-x:hidden;
+  
+}
+
+
+/** 顶栏*/
+.top{
+  width:750rpx;
+  height:330rpx;
+  background-color:#fff;
+  overflow-x:hidden;
+}
+
+.page_title{
+  position:relative;
+  top:120rpx;
+  left:230rpx;
+  font-size:normal;
+  overflow-x:hidden;
+}
+
+.back{
+  width:65rpx;
+  height:65rpx;
+  float:left;
+  position:relative;
+  top:55rpx;
+}
+
+
+.navbar{
+  flex: none;
+  display: flex;
+  position:relative;
+  bottom:80rpx;
+  width:750rpx;
+  overflow-x:hidden;
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+.navbar .item.active{
+  color: #4db456;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #4db456;
+}
+
+/*整个tab*/
+.tab{
+  width:750rpx;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  bottom:40rpx;
+  overflow:hidden;
+}
+
+
+/*item样式*/
+
+.product_item{
+  width:680rpx;
+  height:240rpx;
+  background-color:white;
+  border-radius:20rpx;
+  margin-top:20rpx;
+  position:relative;
+  left:30rpx;
+  overflow:hidden;
+}
+
+.item_hidden{
+  width:680rpx;
+  height:160rpx;
+  background-color:white;
+  border-bottom-left-radius:20rpx;
+  border-bottom-right-radius:20rpx;
+  position:relative;
+  left:30rpx;
+  bottom:20rpx;
+  color:gray;
+  overflow:hidden;
+}
+
+.item_id{
+  color:gray;
+  position:relative;
+  left:5rpx;
+}
+
+.left_txt{
+  position:relative;
+  left:30rpx;
+  width:400rpx;
+}
+
+.item_release{
+  color:gray;
+  font-size:small;
+}
+
+.item_right{
+  width:250rpx;
+  height:240rpx;
+  position:relative;
+  bottom:220rpx;
+  left:380rpx;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding-left:30rpx;
+}
+
+.item_button{
+  background-color:rgb(153, 218, 42);
+  box-sizing:border-box;
+  width:200rpx;
+  height:100rpx;
+  padding:25rpx;
+  border-radius:20rpx;
+  font-family:fantasy;
+}
+
+.item_button2{
+  background-color:rgb(245, 242, 71);
+  box-sizing:border-box;
+  width:200rpx;
+  height:100rpx;
+  padding:25rpx;
+  border-radius:20rpx;
+  font-family:fantasy;
+}
+
+.item_button3{
+  background-color:rgb(212, 212, 211);
+  box-sizing:border-box;
+  width:200rpx;
+  height:100rpx;
+  padding:25rpx;
+  border-radius:20rpx;
+  font-family:fantasy;
+}
+
+.hidden{
+  display:none;
+}
+
+.hidden_txt{
+  position:relative;
+  left:30rpx;
+}
+
+.item_note{
+  width:250rpx;
+  height:130rpx;
+  position:relative;
+  left:400rpx;
+  bottom:120rpx;
+}
+
+.addNew {
+  position: fixed;
+  width:150rpx;
+  height:150rpx;
+  font-size: 100rpx;
+  color:rgb(81, 133, 88);
+  background: rgb(220, 241, 215);
+  bottom: 20rpx;
+  left:300rpx;
+  display: flex;
+  justify-content: center;
+  border-radius:100%;
+  opacity:90%;
+}
+
+/*弹窗*/
+
+.model{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 999;
+  opacity: 0.5;
+  top: 0;
+  left:0;
+ }
+ .modalDlg{
+  width: 80%;
+  height:1000rpx;
+  position: fixed;
+  top:350rpx;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin: 0 auto;
+  background-color: rgb(250, 250, 250);
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .windowRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 110rpx;
+  width: 100%;
+ }
+ .eject_back{
+  text-align: center;
+  color: #22a522;
+  font-size: 30rpx;
+  margin: 30rpx;
+ }
+ .userTitle{
+  font-size: 30rpx;
+  color: #666;
+  margin: 30rpx;
+ }
+ .form_area{
+  width: 100%;
+  justify-content:left;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 20rpx;
+ }
+
+
+ /**form**/
+ .input_area{
+  width: 400rpx;
+  border: 1px solid rgb(223, 221, 221);
+  border-radius: 10rpx;
+  font-size:30rpx;
+ }
+ .text_area{
+  width: 400rpx;
+  height:100rpx;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 10rpx;
+  font-size:30rpx;
+  margin-bottom:20rpx;
+ }
+
+ .input_item{
+   display:flex;
+   flex-direction:row;
+   justify-content:center;
+   margin-bottom:20rpx;
+ }
+
+ .text_container{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  margin-bottom:20rpx;
+}
+
+ .item_icon{
+   width:50rpx;
+   height:50rpx;
+   margin-right:20rpx;
+   opacity:0.9;
+ }
+
+
+.btn-area{
+  width:600rpx;
+  display:flex;
+  flex-direction:column;
+  justify-content:left;
+}
+
+
+
+
+

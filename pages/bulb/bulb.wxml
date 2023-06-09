@@ -1,0 +1,49 @@
+<!--pages/bulb/bulb.wxml-->
+
+
+
+<!-- 这是中间的导航 -->
+<view class="button_area">
+  <view class="button_item" bindtap="bindViewPhone">
+  <view class="button_imgarea3">
+    <image class="button_img" src="/images/lost.png"></image>
+  </view>
+  <view class="button_txtarea">
+    <view class="button_txt1">
+      电话
+    </view> 
+    <view class="button_txt2">
+      软微电话黄页
+    </view>
+  </view>
+</view>
+
+<view class="button_item" bindtap="bindViewMap">
+  <view class="button_imgarea1">
+    <image class="button_img" src="/images/help.png"></image>
+  </view>
+  <view class="button_txtarea">
+    <view class="button_txt1">
+      北大地图  
+    </view> 
+    <view class="button_txt2">
+      演员详细地图
+    </view>
+  </view>
+</view>
+
+<view class="button_item" bindtap="bindViewSubway">
+  <view class="button_imgarea2">
+    <image class="button_img" src="/images/shop.png"></image>
+  </view>
+  <view class="button_txtarea">
+    <view class="button_txt1">
+      北京地铁
+    </view> 
+    <view class="button_txt2">
+      地铁线路图
+    </view>
+  </view>
+</view>
+
+</view>

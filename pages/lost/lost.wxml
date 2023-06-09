@@ -1,0 +1,27 @@
+<!--pages/lost/lost.wxml-->
+
+<!--头部和搜索框-->
+<view class="top">
+  <view class="back" bindtap="bindBack">
+    <image class="back" src="/images/back.png"></image>
+  </view>
+  <view class="page_title">失物招领</view>
+  <view class="search">
+    <view class="search_icon">
+      <image class="search_img" src="/images/search.png"></image>
+    </view>
+    <view class="search_txt">输入查找内容</view>
+  </view>
+</view>
+
+
+<view class="tab">
+<block wx:for="{{list}}" wx:key="list">
+<view class="product_item">
+  <view class="desc">{{item.desc}}</view>
+  <image class="product_image" src="http://www.ccydqs.com{{item.img}}" mode="aspectFill"></image>
+  <view>{{item.time}}</view>
+  <view>{{item.loc}}</view>
+</view>
+</block>
+</view>

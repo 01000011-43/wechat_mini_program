@@ -1,0 +1,330 @@
+page {
+  background-color: #f4f4f4;
+}
+.copy_page {
+  position: relative;
+  top: 30rpx;
+  display: flex;
+  justify-content: center;
+}
+.copy_page .input_box {
+  background-color: #fff;
+  width: 700rpx;
+  height: 100rpx;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.copy_page .input_box .input_txt {
+  font-size: 32rpx;
+}
+.school_pick {
+  position: relative;
+  top: 50rpx;
+  left: 28rpx;
+  width: 300rpx;
+  background-color: white;
+  border-bottom-right-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+}
+.school_pick .school {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.school_pick .school image {
+  width: 50rpx;
+}
+.school_pick .school .school_name {
+  font-size: 25rpx;
+  padding: 0 0 0 20rpx;
+}
+.personal {
+  position: relative;
+  top: 30rpx;
+  display: flex;
+  justify-content: center;
+}
+.personal .person_info {
+  background-color: #fff;
+  width: 700rpx;
+  border-radius: 20rpx;
+}
+.personal .person_info .person_info_title {
+  display: flex;
+  border-bottom: 1rpx solid #e0e0e0;
+  flex-direction: row;
+  align-items: center;
+}
+.personal .person_info .person_info_title .title_img {
+  flex: 1;
+  padding: 15rpx;
+}
+.personal .person_info .person_info_title .title_txt {
+  flex: 9;
+  font-size: large;
+  font-weight: bold;
+}
+.personal .person_info .person_info_content .name_phone_address {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.personal .person_info .person_info_content .name_phone_address .content {
+  flex: 10;
+  padding: 20rpx 20rpx 20rpx 40rpx;
+}
+.personal .person_info .person_info_content .name_phone_address .content .address_content {
+  color: #828282;
+}
+.personal .person_info .person_info_content .name_phone_address .content .name_content {
+  color: #828282;
+}
+.personal .person_info .person_info_content .name_phone_address .name_img {
+  flex: 1;
+  padding: 20rpx;
+}
+.update {
+  background-color: #fff;
+}
+.update .update_info .update_title {
+  display: flex;
+  justify-content: center;
+}
+.update .update_info .update_title .title_info {
+  font-size: larger;
+  font-weight: bolder;
+  padding: 20rpx;
+}
+.update .update_info .name_info {
+  position: relative;
+  top: 30rpx;
+  left: 50rpx;
+  padding: 10rpx 0;
+}
+.update .update_info .name_info .name_space {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10rpx 0;
+  background-color: #fff;
+}
+.update .update_info .name_info .name_space .shoujianren {
+  font-size: large;
+  font-weight: bold;
+  padding: 0 100rpx 0 0;
+}
+.update .update_info .name_info .name_space .shoujiandizhi {
+  font-size: large;
+  font-weight: bold;
+  padding: 0 70rpx 0 0;
+}
+.update .update_info .name_info .name_space .truename {
+  font-size: large;
+}
+.update .update_info .name_info .name_space .phone_title {
+  flex: 3;
+  font-size: large;
+  font-weight: bold;
+  padding: 0 70rpx 0 0;
+}
+.update .update_info .name_info .name_space .phone_number {
+  flex: 1;
+}
+.update .update_info .name_info .name_space .get_phone {
+  flex: 3;
+  background-color: #fff;
+  color: #55b6c5;
+  font-size: 30rpx;
+  padding: 0 100rpx 0 0;
+}
+.update .update_info .name_info .name_attention {
+  display: flex;
+  align-items: center;
+  padding: 15rpx 0 45rpx 0;
+}
+.update .update_info .name_info .name_attention image {
+  flex: 1;
+  width: 70%;
+  padding: 0 20rpx 0 0 ;
+}
+.update .update_info .name_info .name_attention .tips {
+  flex: 20;
+  color: #a0a0a0;
+  font-size: small;
+}
+.update .update_info .name_info .name_attention .tips .school_tips {
+  font-weight: bolder;
+  font-size: medium;
+}
+.update_button {
+  padding: 20rpx;
+}
+.detail {
+  position: relative;
+  top: 0rpx;
+  display: flex;
+  justify-content: center;
+}
+.detail .detail_info {
+  background-color: #fff;
+  width: 700rpx;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+.detail .detail_info .detail_title {
+  display: flex;
+  align-items: center;
+  padding: 0 0 15rpx 0;
+}
+.detail .detail_info .detail_title .detail_img {
+  padding: 15rpx;
+  flex: 1;
+}
+.detail .detail_info .detail_title .detail_title_txt {
+  font-size: large;
+  font-weight: bold;
+  flex: 9;
+}
+.detail .detail_info .company_box {
+  display: flex;
+  padding: 0 0 15rpx 0;
+  margin: 0 15rpx;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+.detail .detail_info .company_box .company_name {
+  flex: 1;
+}
+.detail .detail_info .company_box .company_name .picker_company {
+  color: #828282;
+}
+.detail .detail_info .company_box .company_name .picker_company1 {
+  color: #000000;
+}
+.detail .detail_info .company_box .package_size {
+  flex: 1;
+}
+.detail .detail_info .stop_time {
+  display: flex;
+  padding: 50rpx 0 15rpx 0;
+  margin: 0 20rpx;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+.detail .detail_info .stop_time .stop_title {
+  flex: 5;
+  color: #828282;
+}
+.detail .detail_info .stop_time .time_picker {
+  flex: 3;
+}
+.detail .detail_info .price_box {
+  display: flex;
+  padding: 50rpx 0rpx 20rpx 0rpx;
+  margin: 0 20rpx;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+.detail .detail_info .price_box .price_box_title {
+  flex: 1;
+  color: #828282;
+}
+.detail .detail_info .price_box .price_set {
+  flex: 1;
+  display: flex;
+}
+.detail .detail_info .price_box .price_set .price_number_box {
+  flex: 1;
+}
+.detail .detail_info .price_box .price_set .price_number_box .price_number {
+  font-size: large;
+  font-weight: bolder;
+}
+.detail .detail_info .price_box .price_set .price_txt {
+  flex: 3;
+}
+.detail .detail_info .message {
+  padding: 50rpx 0 20rpx 0;
+  margin: 0 20rpx;
+}
+.picker {
+  color: #828282;
+}
+.picker1 {
+  color: #000000;
+  font-weight: bold;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 60rpx;
+}
+.other_box {
+  display: flex;
+  padding: 50rpx 0rpx 20rpx 0rpx;
+  margin: 0 20rpx;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+.other_box .price_box1 {
+  flex: 3;
+  display: flex;
+}
+.other_box .price_box1 .price_box_title1 {
+  flex: 1;
+  color: #828282;
+}
+.other_box .price_box1 .price_set1 {
+  flex: 1;
+  display: flex;
+}
+.other_box .price_box1 .price_set1 .price_number_box1 {
+  flex: 1;
+  font-size: large;
+  font-weight: bolder;
+}
+.other_box .price_box1 .price_set1 .price_txt1 {
+  flex: 3;
+  font-weight: bolder;
+}
+.other_box .other_type {
+  flex: 2;
+}
+.other_box .other_type .package_size {
+  padding: 0 20rpx;
+}
+.name_phone {
+  display: flex;
+  padding: 50rpx 0rpx 20rpx 0rpx;
+  border-bottom: 1rpx solid #e0e0e0;
+  margin: 0 20rpx;
+}
+.name_phone .name {
+  flex: 1;
+}
+.name_phone .phone {
+  flex: 1;
+}
+.address_group {
+  padding: 50rpx 0 20rpx 0;
+  margin: 0 20rpx;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+.stop_time {
+  display: flex;
+  padding: 50rpx 0 15rpx 0;
+  margin: 0 20rpx;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+.stop_time .stop_title {
+  flex: 5;
+  color: #828282;
+}
+.stop_time .time_picker {
+  flex: 3;
+}
+.message {
+  padding: 50rpx 0 20rpx 0;
+  margin: 0 20rpx;
+}

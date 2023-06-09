@@ -1,0 +1,104 @@
+/* pages/lost/lost.wxss */
+
+page{
+  background:rgb(231, 241, 243);
+  width:750rpx;
+  overflow-x:hidden;
+}
+
+.back{
+  width:65rpx;
+  height:65rpx;
+  float:left;
+  position:relative;
+  top:50rpx;
+}
+
+.top{
+  width:750rpx;
+  height:300rpx;
+  background-color:#fff;
+  overflow:hidden;
+}
+
+.page_title{
+  position:relative;
+  top:110rpx;
+  left:220rpx;
+}
+
+.search{
+  width:650rpx;
+  height:60rpx;
+  background-color:rgb(238, 236, 236);
+  position:relative;
+  top:150rpx;
+  border-radius:30rpx;
+  display:flex;
+  flex-direction:row;
+}
+
+.search_icon{
+  width:50rpx;
+  height:50rpx;
+  margin-top:10rpx;
+  margin-left:20rpx;
+}
+
+.search_img{
+  width:40rpx;
+  height:40rpx;
+}
+
+.search_txt{
+  color:rgb(138, 136, 136);
+  margin-left:20rpx;
+  margin-top:10rpx;
+  font-size:small;
+}
+
+/*整个tab*/
+.tab{
+  width:700rpx;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  overflow:hidden;
+  padding:20rpx;
+}
+
+.product_item{
+  width:730rpx;
+  margin-left:10rpx;
+  margin-bottom:40rpx;
+  background-color:white;
+  border-radius:20rpx;
+  overflow-x:hidden;
+  position:relative;
+  top:30rpx;
+  padding:20rpx;
+}
+
+.product_image{
+  width:600rpx;
+  border-radius:20rpx;
+  position:relative;
+  left:30rpx;
+}
+
+.dscimg{
+  width:300rpx;
+  border-radius:20rpx;
+}
+
+.desc{
+  overflow:hidden;
+  padding:5rpx;
+}
+
+

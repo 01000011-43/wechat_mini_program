@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "order_tabs":"../../components/order_tabs/prder_tabs",
+    "choose":"../../components/choose_type/choose"
+  },
+  "navigationBarTitleText": "下单",
+  "navigationBarTextStyle": "black"
+}

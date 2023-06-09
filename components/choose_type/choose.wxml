@@ -1,0 +1,15 @@
+<view class="choose">
+  <view class="tabs">
+    <view class="tabs_title">
+      <view class="title_item {{item.isActive?'active':''}}" 
+      wx:for="{{choose_list}}" wx:key="id"
+      bindtap="handleItemTab1" data-index="{{index}}">
+        {{item.name}}
+      </view>
+    </view>
+    <view class="tabs_content">
+      <!-- 插槽是从父传递到子 -->
+      <slot></slot>
+    </view>
+  </view>
+</view>

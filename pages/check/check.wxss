@@ -1,0 +1,45 @@
+/* pages/check/check.wxss */
+
+page{
+  background-color:rgb(217, 245, 229);
+  width:750rpx;
+  overflow-x:hidden;
+}
+
+.login{
+  position:relative;
+  top:200rpx;
+  color:white;
+  font-weight:normal;
+  background-color:rgb(63, 145, 63);
+  display:flex;
+
+}
+
+.click{
+  background-color:rgb(33, 122, 33);
+}
+
+.pic{
+  width:600rpx;
+  height:350rpx;
+  position:relative;
+  left:80rpx;
+  top:200rpx;
+}
+
+.box{
+  position:relative;
+  top:100rpx;
+}
+
+.msg{
+  position:relative;
+  top:200rpx;
+}
+
+.note{
+  position:relative;
+  top:300rpx;
+  left:250rpx;
+}

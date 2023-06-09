@@ -1,0 +1,112 @@
+<!--pages/home/home.wxml-->
+
+<!--swiper part-->
+<view class="swiper">
+  <swiper
+    autoplay="true"
+    indicator-dots="true"
+    >
+    <swiper-item>
+      <image class="swiper_img" src="/images/delivery_logo.png"/>
+    </swiper-item>
+    <swiper-item>
+      <image class="swiper_img" src="/images/computer.jpg"/>
+    </swiper-item>
+    <swiper-item>
+      <image class="swiper_img" src="/images/phone.png"/>
+    </swiper-item>
+  </swiper>
+</view>
+
+
+<!-- 这是中间的导航 -->
+<view class="button_area">
+<view class="button_item" bindtap="bindViewTap">
+  <view class="button_imgarea1">
+    <image class="button_img" src="/images/help.png"></image>
+  </view>
+  <view class="button_txtarea">
+    <view class="button_txt1">
+      代领跑腿  
+    </view> 
+    <view class="button_txt2">
+      带回快递 外卖 校门/本部
+    </view>
+  </view>
+</view>
+
+<view class="button_item" bindtap="bindViewGroup">
+  <view class="button_imgarea2">
+    <image class="button_img" src="/images/taxi.png"></image>
+  </view>
+  <view class="button_txtarea">
+    <view class="button_txt1">
+      拼车组队
+    </view> 
+    <view class="button_txt2">
+      同城出行 合租 组队
+    </view>
+  </view>
+</view>
+
+<view class="button_item" bindtap="bindViewJob">
+  <view class="button_imgarea4">
+    <image class="button_img" src="/images/job.png"></image>
+  </view>
+  <view class="button_txtarea">
+    <view class="button_txt1">
+      工作
+    </view> 
+    <view class="button_txt2">
+      实习工作 资讯
+    </view>
+  </view>
+</view>
+
+<view class="button_item" bindtap="bindViewPrint">
+  <view class="button_imgarea3">
+    <image class="button_img" src="/images/print.png"></image>
+  </view>
+  <view class="button_txtarea">
+    <view class="button_txt1">
+      打印服务
+    </view> 
+    <view class="button_txt2">
+      校内共享打印服务
+    </view>
+  </view>
+</view>
+
+</view>
+
+
+<!--  最下面的两条导航 -->
+<view class="vibutton_area">
+    <view class="vibutton_item" bindtap="bindViewBulb">
+    <image class="vibutton_icon" src="/images/bulb.png"></image>
+    <view class="vibutton_txt">
+      <view class="vibutton_txt1">校园通</view>
+      <view class="vibutton_txt2">电话黄页</view>
+    </view>
+  </view>
+</view>
+
+<navigator url="/pages/confession/confession" open-type="navigateTo">
+<view class="vibutton_area">
+  <view class="vibutton_item">
+    <image class="vibutton_icon" src="/images/experience.png"></image>
+    <view class="vibutton_txt">
+      <view class="vibutton_txt1">后悔墙</view>
+      <view class="vibutton_txt2">学长学姐 经历</view>
+    </view>
+  </view>
+</view>
+</navigator>
+<!-- switch test-->
+
+
+
+
+
+
+

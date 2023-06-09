@@ -1,0 +1,67 @@
+/* pages/order/order.wxss */
+
+page{
+  background:rgba(248, 248, 248);
+  width:750rpx;
+  overflow-x:hidden;
+}
+
+
+/** 顶栏*/
+.top{
+  width:750rpx;
+  height:350rpx;
+  background-color:#fff;
+  overflow-x:hidden;
+}
+
+.page_title{
+  position:relative;
+  top:120rpx;
+  left:30rpx;
+  font-size:large;
+  overflow-x:hidden;
+}
+
+.navbar{
+  flex: none;
+  display: flex;
+  position:relative;
+  bottom:80rpx;
+  width:750rpx;
+  overflow-x:hidden;
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+.navbar .item.active{
+  color: #4db456;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #4db456;
+}
+
+.message{
+  background-color:#fff;
+  height:100rpx;
+  width:700rpx;
+  position:relative;
+  left:25rpx;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+}
+
+.phClass{
+  font-size:18px;
+}

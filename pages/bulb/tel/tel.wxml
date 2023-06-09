@@ -1,0 +1,9 @@
+<!--pages/bulb/tel/tel.wxml-->
+
+<view class="note_txt">
+  维修部门：公众号《软微报修》
+</view>
+<view class="note_txt">
+  软件与微电子学院：61273588
+</view>
+

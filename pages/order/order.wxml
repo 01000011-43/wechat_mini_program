@@ -1,0 +1,18 @@
+<!--pages/order/order.wxml-->
+
+<!--顶栏-->
+<view class="top">
+
+  <view class="page_title">板块选择：</view>
+</view>
+<!--导航条-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+
+
+  <view class='message'>
+    <input type="text" placeholder="粘贴快递短信，或自行输入" placeholder-class="phClass"/>
+ </view>
+
+

@@ -1,0 +1,40 @@
+/* pages/bulb/subway/busway.wxss */
+
+page{
+  background:rgb(210, 231, 236);
+  width:750rpx;
+  overflow-x:hidden;
+}
+
+.back{
+  width:55rpx;
+  height:55rpx;
+  float:left;
+  position:relative;
+  top:50rpx;
+}
+
+.top{
+  width:750rpx;
+  height:300rpx;
+  background-color:#fff;
+}
+
+.page_title{
+  position:relative;
+  top:110rpx;
+  left:250rpx;
+}
+
+
+.img_area{
+  position:relative;
+  top:200rpx;
+  left:50rpx;
+}
+
+.note_txt{
+  position:relative;
+  top:200rpx;
+  left:100rpx;
+}

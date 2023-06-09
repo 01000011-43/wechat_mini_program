@@ -1,0 +1,73 @@
+/* pages/bulb/job/job.wxss */
+
+page{
+  background:rgb(210, 231, 236);
+  width:750rpx;
+  overflow-x:hidden;
+}
+
+.top{
+  width:750rpx;
+  height:150rpx;
+  background-color:#fff;
+  overflow:hidden;
+}
+
+.search{
+  width:650rpx;
+  height:60rpx;
+  background-color:rgb(238, 236, 236);
+  position:relative;
+  top:50rpx;
+  left:50rpx;
+  border-radius:30rpx;
+  display:flex;
+  flex-direction:row;
+}
+
+.search_icon{
+  width:50rpx;
+  height:50rpx;
+  margin-top:10rpx;
+  margin-left:20rpx;
+}
+
+.search_img{
+  width:40rpx;
+  height:40rpx;
+}
+
+.search_txt{
+  color:rgb(138, 136, 136);
+  margin-left:20rpx;
+  margin-top:10rpx;
+  font-size:
+  small;
+}
+
+.memo{
+  width:600rpx;
+  background-color:rgb(241, 228, 198);
+  margin:20rpx;
+  position:relative;
+  left:50rpx;
+  box-shadow:10rpx  10rpx rgb(185, 166, 131);
+
+}
+
+.memo_txt{
+  padding:20rpx;
+  color:#520;
+}
+
+.memo_title{
+  color:gray;
+  position:relative;
+  left:20rpx;
+}
+
+.memo_time{
+  color:gray;
+  position:relative;
+  left:20rpx;
+}

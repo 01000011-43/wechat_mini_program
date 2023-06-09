@@ -1,0 +1,355 @@
+
+page{
+    background-color: rgb(244,244,244);
+}
+
+.copy_page{
+    position: relative;
+    top: 30rpx;
+    display: flex;
+    justify-content: center;
+    .input_box{
+        background-color: #fff;
+        width: 700rpx;
+        height: 100rpx;
+        border-radius: 20rpx;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .input_txt{
+            font-size: 32rpx;
+        }
+    }
+}
+
+.school_pick{
+    position: relative;
+    top: 50rpx;
+    left:28rpx;
+    width: 300rpx;
+    background-color: white;
+    border-bottom-right-radius: 30rpx;
+    border-top-right-radius: 30rpx;
+    .school{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        image{
+            width: 50rpx;
+        }
+        .school_name{
+            font-size: 25rpx;
+            padding: 0 0 0 20rpx;
+        }
+    }
+}
+
+.personal{
+    position: relative;
+    top: 30rpx;
+    display: flex;
+    justify-content: center;
+    .person_info{
+        background-color: #fff;
+        width: 700rpx;
+        border-radius: 20rpx;
+        .person_info_title{
+            display: flex;
+            border-bottom: 1rpx solid rgb(224,224,224);
+            flex-direction: row;
+            align-items: center;
+            
+            .title_img{
+                flex: 1;
+                padding: 15rpx;
+            }
+            .title_txt{
+                flex: 9;
+                font-size: large;
+                font-weight: bold;
+            }
+        }
+        .person_info_content{
+            .name_phone_address{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .content{
+                    flex: 10;
+                    padding: 20rpx 20rpx 20rpx 40rpx;
+                    .address_content{
+                        color: rgb(130,130,130);
+                    }
+                    .name_content{
+                        color: rgb(130,130,130);
+                    }
+                }   
+                .name_img{
+                    flex: 1;
+                    padding: 20rpx;
+                }
+            }
+        }
+    }
+}
+.update{
+    background-color: #fff;
+    .update_info{
+        .update_title{
+            display: flex;
+            justify-content: center;
+            .title_info{
+                font-size: larger;
+                font-weight: bolder;
+                padding: 20rpx;
+            }
+        }
+        .name_info{
+            position: relative;
+            top: 30rpx;
+            left:50rpx;
+            padding: 10rpx 0;
+            .name_space{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 10rpx 0;
+                background-color: #fff;
+                .shoujianren{
+                    font-size: large;
+                    font-weight: bold;
+                    padding: 0 100rpx 0 0;
+                }
+                .shoujiandizhi{
+                    font-size: large;
+                    font-weight: bold;
+                    padding: 0 70rpx 0 0;
+                }
+                .truename{
+                    font-size: large;
+                }
+                .phone_title{
+                    flex: 3;
+                    font-size: large;
+                    font-weight: bold;
+                    padding: 0 70rpx 0 0;
+                }
+                .phone_number{
+                    flex: 1;
+                }
+                .get_phone{
+                    flex: 3;
+                    background-color: #fff;
+                    color: rgb(85,182,197);
+                    font-size: 30rpx;
+                    padding: 0 100rpx 0 0;
+                }
+            }
+            .name_attention{
+                display: flex;
+                align-items: center;
+                padding: 15rpx 0 45rpx 0;
+                image{
+                    flex: 1;
+                    width: 70%;
+                    padding:0 20rpx 0 0 ;
+                }
+                .tips{
+                    flex: 20;
+                    color: rgb(160,160,160);
+                    font-size: small;
+                    .school_tips{
+                        font-weight: bolder;
+                        font-size: medium;
+                    }
+                }
+            }
+        }
+    }
+}
+.update_button{
+    padding: 20rpx;
+}
+.detail{
+    position: relative;
+    top: 0rpx;
+    display: flex;
+    justify-content: center;
+    .detail_info{
+        background-color: #fff;
+        width: 700rpx;
+        border-bottom-left-radius: 20rpx;
+        border-bottom-right-radius: 20rpx;
+        .detail_title{
+            display: flex;
+            align-items: center;
+            padding: 0 0 15rpx 0;
+            .detail_img{
+                padding: 15rpx;
+                flex: 1;
+            }
+            .detail_title_txt{
+                font-size: large;
+                font-weight: bold;
+                flex: 9;
+            }
+        }
+        .company_box{
+            display: flex;
+            padding: 0 0 15rpx 0; 
+            margin: 0 15rpx;
+            border-bottom: 1rpx solid rgb(224,224,224);
+            .company_name{
+                flex: 1;
+                .picker_company{
+                    color: rgb(130,130,130);
+                }
+                .picker_company1{
+                    color: rgb(0,0,0);
+                }
+            }
+            .package_size{
+                flex: 1;
+            }
+        }
+        .stop_time{
+            display: flex;
+            padding: 50rpx 0 15rpx 0;
+            margin: 0 20rpx;
+            border-bottom: 1rpx solid  rgb(224,224,224);
+            .stop_title{
+                flex: 5;
+                color: rgb(130,130,130);
+            }
+            .time_picker{
+                flex: 3;
+            }
+        }
+        .price_box{
+            display: flex;
+            padding: 50rpx 0rpx 20rpx 0rpx;
+            margin: 0 20rpx;
+            border-bottom: 1rpx solid rgb(224,224,224);
+            .price_box_title{
+                flex: 1;
+                color: rgb(130,130,130);
+            }
+            .price_set{
+                flex: 1;
+                display: flex;
+                .price_number_box{
+                    flex: 1;
+                    .price_number{
+                        font-size: large;
+                        font-weight: bolder;
+                    }
+                }
+                .price_txt{
+                    flex: 3;
+                    
+                }
+            }
+
+        }
+        .message{
+            padding: 50rpx 0 20rpx 0;
+            margin: 0 20rpx;
+            .message_box{
+                .message_input{
+
+                }
+            }
+        }
+    }
+}
+.picker{
+    color: rgb(130,130,130);
+}
+.picker1{
+    color: rgb(0,0,0);
+    font-weight: bold;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:60rpx;
+    .submit_button{
+
+    }
+}
+.other_box{
+    display: flex;
+    padding: 50rpx 0rpx 20rpx 0rpx;
+    margin: 0 20rpx;
+    border-bottom: 1rpx solid rgb(224,224,224);
+    .price_box1{
+        flex: 3;
+        display: flex;
+        .price_box_title1{
+            flex: 1;
+            color: rgb(130,130,130);
+        }
+        .price_set1{
+            flex:1;
+            display: flex;
+            .price_number_box1{
+                flex: 1;
+                font-size: large;
+                font-weight: bolder;
+            }
+            .price_txt1{
+                flex: 3;
+                font-weight: bolder;
+            }
+        }
+    }
+    .other_type{
+        flex: 2;
+        .package_size{
+            padding: 0 20rpx;
+        }
+    }
+}
+.name_phone{
+    display: flex;
+    padding: 50rpx 0rpx 20rpx 0rpx;
+    border-bottom: 1rpx solid rgb(224,224,224);
+    margin: 0 20rpx;
+    .name{
+        flex: 1;
+    }
+    .phone{
+        flex: 1;
+    }
+}
+.address_group{
+    padding: 50rpx 0 20rpx 0;
+    margin: 0 20rpx;
+    border-bottom: 1rpx solid rgb(224,224,224);
+    
+}
+.stop_time{
+    display: flex;
+    padding: 50rpx 0 15rpx 0;
+    margin: 0 20rpx;
+    border-bottom: 1rpx solid  rgb(224,224,224);
+    .stop_title{
+        flex: 5;
+        color: rgb(130,130,130);
+    }
+    .time_picker{
+        flex: 3;
+    }
+}
+.message{
+    padding: 50rpx 0 20rpx 0;
+    margin: 0 20rpx;
+    .message_box{
+        .message_input{
+
+        }
+    }
+}

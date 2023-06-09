@@ -1,0 +1,149 @@
+/* pages/shop/shop.wxss */
+
+page{
+  width:750rpx;
+  overflow-x:hidden;
+}
+
+.top{
+  width:750rpx;
+  height:330rpx;
+  background-color:#fff;
+  overflow:hidden;
+}
+
+.page_title{
+  position:relative;
+  top:110rpx;
+  left:210rpx;
+  font-size:20;
+}
+
+.back{
+  width:65rpx;
+  height:65rpx;
+  float:left;
+  position:relative;
+  top:50rpx;
+}
+
+.search{
+  width:650rpx;
+  height:60rpx;
+  background-color:rgb(238, 236, 236);
+  position:relative;
+  top:150rpx;
+  right:30rpx;
+  border-radius:30rpx;
+  display:flex;
+  flex-direction:row;
+}
+
+.search_icon{
+  width:50rpx;
+  height:50rpx;
+  margin-top:10rpx;
+  margin-left:20rpx;
+}
+
+.search_img{
+  width:40rpx;
+  height:40rpx;
+}
+
+.search_txt{
+  color:rgb(138, 136, 136);
+  margin-left:20rpx;
+  margin-top:10rpx;
+  font-size:small;
+}
+
+.navbar{
+  flex: none;
+  display: flex;
+  position:relative;
+  bottom:80rpx;
+}
+
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.navbar .item.active{
+  color: #4db456;
+}
+
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #4db456;
+}
+
+/*整个tab*/
+.tab{
+  width:700rpx;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  overflow-x:hidden;
+}
+
+.product_item{
+  width:310rpx;
+  margin-left:40rpx;
+  margin-bottom:20rpx;
+  background-color:white;
+  border-radius:20rpx;
+  overflow-x:hidden;
+}
+
+.product_image{
+  width:300rpx;
+  border-radius:20rpx;
+  height:auto;
+}
+
+.dscimg{
+  width:300rpx;
+  border-radius:20rpx;
+}
+
+.desc{
+  height:180rpx;
+  overflow:hidden;
+  padding:5rpx;
+}
+
+.nickname{
+  color:gray;
+  position:relative;
+  left:10rpx;
+}
+
+.avatar{
+  width:60rpx;
+  height:60rpx;
+  position:relative;
+  left:210rpx;
+  bottom:70rpx;
+  border-radius:20rpx;
+}
+
+.price{
+  color:red;
+  position:relative;
+  left:20rpx;
+}

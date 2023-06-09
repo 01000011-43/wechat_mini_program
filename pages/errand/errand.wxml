@@ -1,0 +1,211 @@
+<!--pages/errand/errand.wxml-->
+
+<!--模糊-->
+<view class="page" style="filter:{{blurvalue}}">
+ 
+<!--导航条-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+ 
+<!--校内-->
+<view hidden="{{currentTab!==0}}" class="tab">
+  <block wx:for="{{list01}}" wx:key="list01">
+  <view wx:if="{{item.loctype==0}}" class="product_item" id="{{item.id}}" bindtap='getDetail'>
+   <view class="item_id">#{{item.id}}</view>
+    <view class="left_txt">
+      <view>领取地点：<text style="color:#0c0">{{item.pickuploc}}</text></view>
+      <view>送往地点：{{item.destination}}</view>
+      <view>领取时间：{{item.pickuptime}}</view>
+      <view>赏金：<text style="color:#cb2">{{item.reward}}</text></view>
+      <view hidden="{{item.pstatus!=='1'}}" class="item_right">
+        <view class="item_button">
+          <view class="button_txt">
+            领取任务
+          </view>
+        </view>
+          <view class="status_txt">状态：待领取</view>
+        <view class="item_release">发布：{{item.releasetime}}</view>
+    </view>
+
+    <view hidden="{{item.pstatus!=='2'}}" class="item_right">
+        <view class="item_button2">
+          <view class="button_txt">
+            进行中
+          </view>
+        </view>
+          <view class="status_txt">状态：代领中</view>
+        <view class="item_release">发布：{{item.releasetime}}</view>
+    </view>
+
+    <view hidden="{{item.pstatus!=='3'}}" class="item_right">
+        <view class="item_button3">
+          <view class="button_txt">
+            已完成
+          </view>
+        </view>
+          <view class="status_txt">状态：已完成</view>
+        <view class="item_release">发布：{{item.releasetime}}</view>
+    </view>
+
+  </view>
+</view>
+  <view class='{{uhide==item.id?"":"hidden"}}'>
+    <view class="item_hidden">
+      <view class="hidden_txt">
+       <view>类型{{item.type}}</view>
+        <view>尺寸：{{item.size}}</view>
+        <view>领取凭证：{{item.proof}}</view>
+        <view class="item_note">备注信息：{{item.note}}</view>
+      </view>
+    </view>
+  </view>
+  </block>
+</view>
+
+
+ 
+<!--校外-->
+<view hidden="{{currentTab!==1}}" class="tab">
+  <block wx:for="{{list01}}" wx:key="list02">
+  <view wx:if="{{item.loctype==1}}" class="product_item" id="{{item.id}}" bindtap='getDetail'>
+   <view class="item_id">#{{item.id}}</view>
+    <view class="left_txt">
+      <view>领取地点：<text style="color:#0c0">{{item.pickuploc}}</text></view>
+      <view>送往地点：{{item.destination}}</view>
+      <view>领取时间：{{item.pickuptime}}</view>
+      <view>赏金：<text style="color:#cb2">{{item.reward}}</text></view>
+      <view hidden="{{item.pstatus!=='1'}}" class="item_right">
+        <view class="item_button">
+          <view class="button_txt">
+            领取任务
+          </view>
+        </view>
+          <view class="status_txt">状态：待领取</view>
+        <view class="item_release">发布：{{item.releasetime}}</view>
+    </view>
+
+    <view hidden="{{item.pstatus!=='2'}}" class="item_right">
+        <view class="item_button2">
+          <view class="button_txt">
+            进行中
+          </view>
+        </view>
+          <view class="status_txt">状态：代领中</view>
+        <view class="item_release">发布：{{item.releasetime}}</view>
+    </view>
+
+    <view hidden="{{item.pstatus!=='3'}}" class="item_right">
+        <view class="item_button3">
+          <view class="button_txt">
+            已完成
+          </view>
+        </view>
+          <view class="status_txt">状态：已完成</view>
+        <view class="item_release">发布：{{item.releasetime}}</view>
+    </view>
+
+  </view>
+</view>
+  <view class='{{uhide==item.id?"":"hidden"}}'>
+    <view class="item_hidden">
+      <view class="hidden_txt">
+       <view>类型{{item.type}}</view>
+        <view>尺寸：{{item.size}}</view>
+        <view>领取凭证：{{item.proof}}</view>
+        <view class="item_note">备注信息：{{item.note}}</view>
+      </view>
+    </view>
+  </view>
+  </block>
+</view>
+
+<!--接的filter的view-->
+</view>
+
+<!--弹窗form-->
+<view class="model" catchtouchmove='preventTouchMove' wx:if='{{showModal}}'></view>
+<view class="modalDlg" catchtouchmove='preventTouchMove' wx:if='{{showModal}}'>
+ <view class='windowRow'>
+  <text class='userTitle'>发布代领
+ </text>
+  <view class='eject_back' bindtap='back'>
+   返回
+  </view>
+ </view>
+
+
+  <!--form_item-->
+  <view class="container">
+  <view class="page-body">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      <view class='input_item'>
+        <view class="item_icon">
+           <image src="/images/loc.png" class="item_icon"></image>
+        </view>
+        <input placeholder='*领取地点' class='input_area' name='pickuploc'></input>
+      </view>
+
+      <view class='input_item'>
+     <view class="item_icon">
+    <image src="/images/location.png" class="item_icon"></image>
+    </view>
+    <input placeholder='*送往地址' class='input_area' name='destination'></input>
+   </view>
+
+   <view class='input_item'>
+     <view class="item_icon">
+    <image src="/images/time.png" class="item_icon"></image>
+    </view>
+    <input placeholder='*领取时间' class='input_area' name='pickuptime'></input>
+   </view>
+  
+   <view class='input_item'>
+     <view class="item_icon">
+    <image src="/images/reward.png" class="item_icon"></image>
+    </view>
+    <input placeholder='赏金' class='input_area' name='reward'></input>
+   </view>
+
+   <view class='input_item'>
+     <view class="item_icon">
+    <image src="/images/waimai.png" class="item_icon"></image>
+    </view>
+    <input placeholder='代领类型' class='input_area' name='type'></input>
+   </view>
+
+   <view class='input_item'>
+     <view class="item_icon">
+    <image src="/images/size.png" class="item_icon"></image>
+    </view>
+    <input placeholder='尺寸' class='input_area' name='size'></input>
+   </view>
+
+   <view class='input_item'>
+     <view class="item_icon">
+    <image src="/images/bulb.png" class="item_icon"></image>
+    </view>
+    <input placeholder='领取凭证' class='input_area' name='proof'></input>
+   </view>
+
+   <view class='text_container'>
+     <view class="item_icon">
+    <image src="/images/note.png" class="item_icon"></image>
+    </view>
+    <textarea placeholder='备注信息' class='text_area' name='note'></textarea>
+   </view>
+
+     <view class="btn-area">
+        <button type="primary" formType="submit" class='btn'>提交</button>
+        <button formType="reset" class='btn'>恢复</button>
+      </view>
+    </form>
+  </view>
+
+</view>
+
+  <!--下面这个是modalDlg的-->
+  </view> 
+<!--新增消息键-->
+<view class='addNew' bindtap='eject'><view>+</view></view>
+

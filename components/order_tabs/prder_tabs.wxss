@@ -1,0 +1,29 @@
+/* components/order_tabs/prder_tabs.wxss */
+.tabs {
+  display: flex;
+  padding: 10rpx 0;
+  background-color: #fff;
+  justify-content: flex-start;
+}
+.tabs .total_title {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.tabs .total_title .title_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.tabs .total_title .title_item image {
+  width: 120rpx;
+}
+.tabs .total_title .title_item .txt_item_active {
+  font-weight: bold;
+  color: #4badbf;
+}
+.tabs .total_title .title_item .txt_item {
+  font-size: small;
+  color: #a0a0a0;
+}

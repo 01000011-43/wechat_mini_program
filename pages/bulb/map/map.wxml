@@ -1,0 +1,10 @@
+<!--pages/bulb/map/map.wxml-->
+
+
+<view class="img_area">
+  <image src="{{url}}" data-url="{{url}}" bindlongpress="saveImage"></image>
+</view>
+
+<view class="note_txt">
+  长按保存，图片较大，需要时间比较久
+</view>

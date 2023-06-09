@@ -1,0 +1,166 @@
+/* pages/mine/profile/profile.wxss */
+
+page{
+  width:750rpx;
+  overflow:hidden;
+  background:rgb(231, 243, 247);
+}
+
+.page_title{
+  position:relative;
+  top:120rpx;
+  left:230rpx;
+  font-size:normal;
+  overflow-x:hidden;
+}
+
+.back{
+  width:65rpx;
+  height:65rpx;
+  float:left;
+  position:relative;
+  top:55rpx;
+}
+
+.userinfo{
+  background-color:rgb(237, 250, 241);
+  height:500rpx;
+  width:750rpx;
+  border-radius:50rpx;
+}
+
+
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  position:relative;
+  top:200rpx;
+  left:230rpx;
+}
+
+.userinfo-nickname{
+  color:#aaa;
+  position:relative;
+  left:290rpx;
+  top:200rpx;
+  font-size:small;
+}
+
+.profile_txt{
+  position:relative;
+  top:70rpx;
+  left:300rpx;
+  font-size:small;
+  color:#aaa;
+}
+
+.profile_item{
+  width:750rpx;
+  height:100rpx;
+  background-color:white;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  border-bottom: 1rpx solid rgb(235, 238, 237);
+}
+
+.item_text{
+  position:relative;
+  top:10rpx;
+  left:20rpx;
+  padding:20rpx 40rpx 20rpx 20rpx;
+  border-right: 1rpx solid rgb(235,238,237);
+}
+
+.item_text2{
+  position:relative;
+  top:10rpx;
+  left:20rpx;
+  padding:20rpx 40rpx 20rpx 20rpx;
+  color:gray;
+}
+
+
+/*弹窗*/
+.body{
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+ }
+ .body button{
+  height: 100rpx;
+ }
+ .model{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 999;
+  opacity: 0.5;
+  top: 0;
+  left:0;
+ }
+ .modalDlg{
+  width: 80%;
+  position: fixed;
+  top:350rpx;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .windowRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 110rpx;
+  width: 100%;
+ }
+ .eject_back{
+  text-align: center;
+  color: #22a522;
+  font-size: 30rpx;
+  margin: 30rpx;
+ }
+ .userTitle{
+  font-size: 30rpx;
+  color: #666;
+  margin: 30rpx;
+ }
+ .wishName{
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  margin-bottom: 30rpx;
+ }
+ .wish_put{
+  width: 80%;
+  height:80rpx;
+  border: 1px solid;
+  border-radius: 10rpx;
+  padding-left: 10rpx;
+  font-size:30rpx;
+ }
+ .wishbnt{
+  width: 100%;
+  font-size: 30rpx;
+  margin-bottom: 30rpx;
+ }
+ .wishbnt_bt{
+  width: 50%;
+  background-color: rgb(46, 153, 14);
+  color: #abecb0;
+  font-size: 30rpx;
+  border: 0;
+ }

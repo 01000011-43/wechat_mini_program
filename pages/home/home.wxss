@@ -1,0 +1,155 @@
+/* pages/home/home.wxss */
+
+/* page & swiper */
+page{
+  background:rgba(232, 242, 245, 0.959);
+}
+
+swiper{
+  width: 100%;
+  height: calc(100vw*3/5);
+ }
+
+ /*swiper*/
+.swiper{
+  width:100%;
+}
+
+.swiper_img{
+width:750rpx;
+height:calc(100vw*3/5);
+border-radius:50rpx;
+}
+
+
+/*中间的导航*/
+.button_area{
+  width:500rpx;
+  height:680rpx;
+  position:relative;
+  left:125rpx;
+  top:80rpx;
+  background-color:#fff;
+  border-radius:20rpx;
+}
+
+.button_item{
+  margin:20rpx;
+  height:150rpx;
+  position:relative;
+  top:8rpx;
+  border-bottom: 1rpx solid rgb(243, 243, 243);
+}
+
+.button_imgarea1{
+  background-color:rgb(250, 229, 229);
+  height:100rpx;
+  width:100rpx;
+  position:relative;
+  top:20rpx;
+  border-radius:40rpx;
+}
+
+.button_imgarea2{
+  background-color:rgb(213, 235, 253);
+  height:100rpx;
+  width:100rpx;
+  position:relative;
+  top:20rpx;
+  border-radius:40rpx;
+}
+
+.button_imgarea3{
+  background-color:rgb(216, 253, 224);
+  height:100rpx;
+  width:100rpx;
+  position:relative;
+  top:20rpx;
+  border-radius:40rpx;
+}
+
+.button_imgarea4{
+  background-color:rgb(252, 251, 203);
+  height:100rpx;
+  width:100rpx;
+  position:relative;
+  top:20rpx;
+  border-radius:40rpx;
+}
+
+.button_img{
+  height:70rpx;
+  width:70rpx;
+  position:relative;
+  top:10rpx;
+  left:15rpx;
+}
+
+.button_txtarea{
+  background-color:#fff;
+  height:100rpx;
+  width:300rpx;
+  position:relative;
+  bottom:80rpx;
+  left:150rpx;
+}
+
+.button_txt1{
+  margin-top:15rpx;
+  font-weight:bold;
+}
+
+.button_txt2{
+  font-size:small;
+  color:rgb(165, 165, 165);
+}
+
+
+/*下面的两个导航*/
+.vibutton_area{
+  width:240rpx;
+  height:100rpx;
+  background-color:#fff;
+  position:relative;
+  top:100rpx;
+  left:125rpx;
+  border-radius:10rpx;
+  float:left;
+  margin-right:20rpx;
+}
+
+.vibutton_item{
+  width:250rpx;
+  height:100rpx;
+  float:left;
+  position:relative;
+  left:10rpx;
+  box-sizing: 250rpx;
+}
+
+.vibutton_icon{
+  height:50rpx;
+  width:50rpx;
+  float:left;
+  position:relative;
+  top:20rpx;
+  margin-right:30rpx;
+}
+
+.vibutton_txt1{
+  margin-top:15rpx;
+  font-weight:450;
+}
+
+.vibutton_txt2{
+  font-size:xx-small;
+  color:rgb(165, 165, 165);
+  position:relative;
+  left:60rpx;
+}
+
+
+.test{
+  position:relative;
+  top:250rpx;
+}
